@@ -23,7 +23,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: unset;
+    color: unset; // unset :ke thua lai gia tri tu the cha 
 }
 
 @each $color, $val in colors {
@@ -41,6 +41,7 @@ a {
         grid-template-columns: repeat($var, 1fr);
     }
 }
+
 @each $var in $numbers {
     .grid-col-md-#{$var} {
         @include tablet {
@@ -50,7 +51,7 @@ a {
 }
 
 @each $var in $numbers {
-    .grid-col-#{$var} {
+    .grid-col-sm-#{$var} {
         @include mobile {
             grid-template-columns: repeat($var, 1fr);
         }
@@ -83,4 +84,8 @@ a {
     @include mobile {
         margin-top: calc(#{$header-mobile-height} + 10px);
     }
+}
+
+.grid {
+    display: grid;
 }
