@@ -100,7 +100,7 @@ const HeroSliderItem = props => (
         <div className="hero-slider__item__image">
             <div className={`shape bg-${props.item.color}`}></div>
                
-                <img alt="" src = {img1}/>
+                <img alt="" src = {img2}/>
         </div>
     </div>
 )
