@@ -59,13 +59,13 @@ const Footer = () => {
                         </div>
                         <div className="footer__content">
                             <p>
-                                Liên hệ đặt hàng : <strong>0123456789</strong>
+                                Liên hệ đặt hàng <strong>0123456789</strong>
                             </p>
                             <p>
-                                Thắc mắc đơn hàng : <strong>0123456789</strong>
+                                Thắc mắc đơn hàng <strong>0123456789</strong>
                             </p>
                             <p>
-                                Góp ý, khiếu nại : <strong>0123456789</strong>
+                                Góp ý, khiếu nại <strong>0123456789</strong>
                             </p>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                         <div className="footer__content">
                             {
                                 footerAboutLinks.map((item, index) => (
-                                    <p className='footer__content__item' key={index}>
+                                    <p key={index}>
                                         <Link to={item.path}>
                                             {item.display}
                                         </Link>
@@ -92,7 +92,7 @@ const Footer = () => {
                         <div className="footer__content">
                             {
                                 footerCustomerLinks.map((item, index) => (
-                                    <p className='footer__content__item' key={index}>
+                                    <p key={index}>
                                         <Link to={item.path}>
                                             {item.display}
                                         </Link>

@@ -3,13 +3,11 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 import Button from './Button'
-import img1 from "../assets/images/slider/slide_1.png";
-import img2 from "../assets/images/slider/slide_2.png";
-import img3 from "../assets/images/slider/slide_3.png";
 
 const HeroSlider = props => {
 
-    const data = props.data;
+    const data = props.data
+
     const timeOut = props.timeOut ? props.timeOut : 3000
 
     const [activeSlide, setActiveSlide] = useState(0);
@@ -40,11 +38,9 @@ const HeroSlider = props => {
 
     return (
         <div className="hero-slider">
-            
             {
                 data.map((item, index) => (
-                    <HeroSliderItem key={index} item={item} index = {index} active={index === activeSlide}/>
-                    
+                    <HeroSliderItem key={index} item={item} active={index === activeSlide}/>
                 ))
             }
             {
@@ -77,7 +73,6 @@ HeroSlider.propTypes = {
 
 const HeroSliderItem = props => (
     <div className={`hero-slider__item ${props.active ? 'active' : ''}`}>
-        
         <div className="hero-slider__item__info">
             <div className={`hero-slider__item__info__title color-${props.item.color}`}>
                 <span>{props.item.title}</span>
@@ -99,8 +94,7 @@ const HeroSliderItem = props => (
         </div>
         <div className="hero-slider__item__image">
             <div className={`shape bg-${props.item.color}`}></div>
-               
-                <img alt="" src = {img2}/>
+            <img src={props.item.img} alt="" />
         </div>
     </div>
 )

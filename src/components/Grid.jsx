@@ -14,13 +14,11 @@ const Grid = props => {
     return (
         <div className={`grid ${col} ${mdCol} ${smCol}`} style={style}>
             {props.children}
-            {console.log(props.children)}
         </div>
     )
 }
 
-Grid.propTypes = { 
-    // Kiểm tra 
+Grid.propTypes = {
     col: PropTypes.number.isRequired,
     mdCol: PropTypes.number,
     smCol: PropTypes.number,

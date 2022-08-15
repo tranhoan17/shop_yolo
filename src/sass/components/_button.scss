@@ -3,13 +3,12 @@
     outline: 0;
     color: $btn-main-color;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    background-color: $main-color;
-    
+
     @include mobile {
         font-size: 1rem;
     }
@@ -49,5 +48,9 @@
 
     &-sm &__txt {
         padding: 0.7rem 1.5rem;
+    }
+
+    &-block {
+        width: 100%;
     }
 }

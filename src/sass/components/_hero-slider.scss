@@ -24,13 +24,11 @@
         inset: 0;
 
         @include tablet {
-            margin: 0 50px;
             flex-direction: column-reverse;
             padding-top: $header-tablet-height;
         }
 
         @include mobile {
-            margin: 0 20px;
             padding-top: unset;
             padding-bottom: 40px;
         }
@@ -141,11 +139,11 @@
                 position: absolute;
                 right: 0;
                 top: 50%;
-                // border-radius: 58% 42% 38% 62% / 42% 55% 45% 58%;
+                border-radius: 58% 42% 38% 62% / 42% 55% 45% 58%;
                 transform: translate(0, -50%);
                 transition: border-radius 13s ease;
                 animation: border 10s infinite;
-                
+
                 @include tablet {
                     $size: 250px;
                     height: $size;
@@ -202,28 +200,4 @@
     100% {
         border-radius: 58% 42% 38% 62% / 42% 55% 45% 58%;
     }
-}
-
-.color-blue {
-    color: $main-color;
-}
-
-.color-orange {
-    color: #fbb96b;
-}
-
-.color-pink {
-    color: #fe7e73;
-}
-
-.shape.bg-blue {
-    background-color: $main-color;
-}
-
-.shape.bg-orange {
-    background-color: #fbb96b;
-}
-
-.shape.bg-pink {
-    background-color: #fe7e73;
 }
